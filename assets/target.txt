@@ -1,0 +1,3 @@
+Name                Stmts   Miss Branch BrPart  Cover   Missing
+---------------------------------------------------------------
+SUT\sut_2.py         7      3      2      1    56%      1-3, 4->exit, 10

@@ -1,0 +1,17 @@
+digraph "clustersut_1.py" {
+	graph [label="sut_1.py"]
+	1 [label="def testfunc_1(x, y):...
+if x > y:
+"]
+	2 [label="if x > 100 > y:
+"]
+	4 [label="return 'answer'
+"]
+	2 -> 4 [label="x > 100 > y"]
+	3 [label="def main(x, y):...
+return testfunc_1(x, y)
+"]
+	2 -> 3 [label="(x <= 100)"]
+	1 -> 2 [label="x > y"]
+	1 -> 3 [label="(x <= y)"]
+}

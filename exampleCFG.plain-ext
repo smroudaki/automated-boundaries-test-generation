@@ -1,0 +1,19 @@
+graph 1 7.5519 4.9861
+node 1 1.9408 4.1944 3.8816 0.5 "def fib(a):...marks = {10, 15, 20, 5}" solid ellipse black lightgrey
+node 13 1.9408 2.9861 2.0582 0.5 "for item in marks:" solid ellipse black lightgrey
+node 14 1.9408 1.7778 1.1555 0.5 "fib(item)" solid ellipse black lightgrey
+node "14_calls" 1.9408 0.56944 0.75 0.5 fib solid box black lightgrey
+node 3 5.5936 4.1944 1.1916 0.5 "if a > 20:" solid ellipse black lightgrey
+node 4 4.9964 2.9861 1.7693 0.5 "return 'Perfect'" solid ellipse black lightgrey
+node 5 6.7325 2.9861 1.1916 0.5 "if a > 10:" solid ellipse black lightgrey
+node 7 4.8714 1.7778 1.5346 0.5 "return 'Pass'" solid ellipse black lightgrey
+node 9 6.6075 1.7778 1.4263 0.5 "return 'Fail'" solid ellipse black lightgrey
+edge 1 13 4 1.9408 3.9417 1.9408 3.78 1.9408 3.5632 1.9408 3.3783 solid black
+edge 13 14 7 1.7113 2.7386 1.6523 2.6639 1.5968 2.5769 1.5658 2.4861 1.5236 2.3623 1.565 2.2343 1.6336 2.1223 marks 1.8019 2.3819 solid black
+edge 14 13 7 2.0301 2.0256 2.056 2.1045 2.0807 2.1938 2.0936 2.2778 2.1098 2.3835 2.0975 2.4972 2.0742 2.6013 solid black
+edge 14 "14_calls" 4 1.9408 1.525 1.9408 1.3634 1.9408 1.1465 1.9408 0.96162 calls 2.1144 1.1736 dashed black
+edge 3 4 4 5.4756 3.9473 5.3911 3.7802 5.2756 3.5521 5.1792 3.3615 "a > 20" 5.5797 3.5903 solid black
+edge 3 5 4 5.8078 3.9585 5.9812 3.7788 6.2277 3.5232 6.4227 3.3212 "(a <= 20)" 6.5866 3.5903 solid black
+edge 5 7 4 6.4168 2.772 6.1175 2.5821 5.6647 2.2949 5.3264 2.0803 "a > 10" 6.163 2.3819 solid black
+edge 5 9 4 6.7072 2.7333 6.6901 2.5717 6.6671 2.3548 6.6475 2.17 "(a <= 10)" 7.045 2.3819 solid black
+stop
